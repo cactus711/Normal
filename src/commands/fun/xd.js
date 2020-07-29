@@ -1,6 +1,5 @@
-const {
-    Command
-} = require('klasa');
+const { Command } = require('klasa');
+const {MessageEmbed} = require('discord.js');
 
 module.exports = class extends Command {
 
@@ -27,7 +26,11 @@ module.exports = class extends Command {
 
     async run(message, [...params]) {
         // This is where you place the code you want to run for your command
-        message.send('xddddd');
+        message.send(
+            new MessageEmbed()
+                .setTitle('xdddd')
+                .setColor('RANDOM')
+        );
     }
 
 }
