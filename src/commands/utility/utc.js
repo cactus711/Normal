@@ -31,14 +31,14 @@ module.exports = class extends Command {
 
         //defino el tiempo :v
         var d = new Date();
-        var hour = d.getHours();
-        var min = d.getMinutes();
-        var sec = d.getSeconds();
+        var hour = d.getUTCHours();
+        var min = d.getUTCMinutes();
+        var sec = d.getUTCSeconds();
 
         //embed
         message.send(
             new MessageEmbed()
-            .setTitle(message.language.get('COMMAND_UTC'))
+            .setTitle(`${message.language.get('COMMAND_UTC')}${hour}:${min}:${sec}`)
             .setThumbnail('https://media.giphy.com/media/ZU3GBNGsAbidG/giphy.gif')
             .setColor('RANDOM')
         );
