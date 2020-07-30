@@ -229,7 +229,7 @@ module.exports = class extends Language {
 
             //UTC
             COMMAND_UTC_DESCRIPTION: 'Despliega la hora UTC',
-            COMMAND_UTC: `Hora UTC: ${hour}:${min}:${sec}`
+            COMMAND_UTC: 'Hora UTC: '
 
         };
     }
