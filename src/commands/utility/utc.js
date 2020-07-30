@@ -28,6 +28,14 @@ module.exports = class extends Command {
     }
 
     async run(message, [...params]) {
+
+        //defino el tiempo :v
+        var d = new Date();
+        var hour = d.getHours();
+        var min = d.getMinutes();
+        var sec = d.getSeconds();
+
+        //embed
         message.send(
             new MessageEmbed()
             .setTitle(message.language.get('COMMAND_UTC'))
