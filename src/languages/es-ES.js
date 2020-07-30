@@ -131,7 +131,7 @@ module.exports = class extends Language {
             //ping
             COMMAND_PING: '¿Ping?',
             COMMAND_PING_DESCRIPTION: 'Ejecuta una prueba de conexión a Discord.',
-            COMMAND_PINGPONG: (diff, ping) => `<a:PandaPing1:454387560031191064>🏓・¡Pong! \n \n<a:Lel:738106782089740410>・El viaje duró: ${diff}ms \n<a:Rainbowflyinghearts:736074024156790834>・Latido: ${ping}ms`,
+            COMMAND_PINGPONG: (diff, ping) => ` <a:PandaPing1:454387560031191064> 🏓・¡Pong! \n \n <a:Lel:738106782089740410> ・El viaje duró: ${diff}ms \n <a:Rainbowflyinghearts:736074024156790834> ・Latido: ${ping}ms`,
 
             //invite
             COMMAND_INVITE_SELFBOT: '¿Por qué necesitarías un enlace de invitación para un selfbot?',
@@ -224,7 +224,12 @@ module.exports = class extends Language {
 
             //Mis commands
 
-            COMMAND_F: ':regional_indicator_f:・FFFFF'
+            //f
+            COMMAND_F: ':regional_indicator_f:・FFFFF',
+
+            //UTC
+            COMMAND_UTC_DESCRIPTION: 'Despliega la hora UTC',
+            COMMAND_UTC: `Hora UTC: ${hour}:${min}:${sec}`
 
         };
     }
