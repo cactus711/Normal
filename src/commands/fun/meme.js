@@ -11,7 +11,7 @@ module.exports = class extends Command {
             cooldown: 0,
             deletable: false,
             bucket: 1,
-            aliases: ['memey'],
+            aliases: ['memey', 'memes'],
             guarded: false,
             nsfw: false,
             permissionLevel: 0,
@@ -25,6 +25,8 @@ module.exports = class extends Command {
     }
 
     async run(message, [...params]) {
+
+        // Array con muchos memes. poQ no uso una API?
                var memearray = [
                    'https://cdn.discordapp.com/attachments/707537070641381438/723572191735840868/20200301_115913.png',
                    'https://cdn.discordapp.com/attachments/707537070641381438/723572868935450804/92824345_286562502336987_3648895891311427584_n.png',
@@ -61,6 +63,8 @@ module.exports = class extends Command {
                ];
 
                var memerandom = memearray[Math.floor(memearray.length * Math.random())];
+        
+        //embed
         message.send(
             new MessageEmbed()
                 .setImage(memerandom)

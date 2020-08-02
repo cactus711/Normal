@@ -25,7 +25,7 @@ module.exports = class extends Command {
     }
 
     async run(message, [...params]) {
-        // This is where you place the code you want to run for your command
+        //embed
         message.send(
             new MessageEmbed()
                 .setTitle('xdddd')

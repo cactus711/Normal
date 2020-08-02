@@ -22,15 +22,14 @@ module.exports = class extends Command {
             requiredPermissions: [],
             requiredSettings: [],
             subcommands: false,
-            description: 'Una gran F en el chat',
+            description: message.language.get('COMMAND_F_DESCRIPTION'),
             quotedStringSupport: false,
-            extendedHelp: 'Muestra un gif de una F'
         });
     }
 
     async run(message, [...params]) {
-        // This is where you place the code you want to run for your command
 
+        //Creo un array y algo que ni yo se lo que es xd
         var fgifarray = [
             'https://media.giphy.com/media/hStvd5LiWCFzYNyxR4/giphy.gif',
             'https://media.giphy.com/media/xTiQylEqfhsP1MQHug/giphy.gif',
@@ -40,9 +39,10 @@ module.exports = class extends Command {
 
         var fgif = fgifarray[Math.floor(fgifarray.length * Math.random())];
 
+        //embed
         message.send(
             new MessageEmbed()
-                .setTitle(message.language.get('COMMAND_F'))
+                .setTitle()
                 .setImage(fgif)
                 .setColor('RANDOM')
         );

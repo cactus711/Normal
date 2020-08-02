@@ -226,6 +226,7 @@ module.exports = class extends Language {
 
             //f
             COMMAND_F: ':regional_indicator_f:・FFFFF',
+            COMMAND_F_DESCRIPTION: 'Una gran F en el chat',
 
             //UTC
             COMMAND_UTC_DESCRIPTION: 'Despliega la hora UTC',

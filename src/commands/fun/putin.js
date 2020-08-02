@@ -30,20 +30,14 @@ module.exports = class extends Command {
 
     async run(message, [...params]) {
 
-
+        //embed
         message.send(
             new MessageEmbed()
             .setTitle('<:comunismo:704342128901357630>・Putin xdddddd')
             .setColor('RANDOM')
         );
-        message.send('https://cdn.discordapp.com/attachments/734479749212012584/735568347843788901/b775c50cce9c8e87e6c414516c16afaf.mp4');
+        //ya no se ni q hago xd
+        message.send('https://cdn.discordapp.com/attachments/707537070641381438/739524968148107325/b775c50cce9c8e87e6c414516c16afaf.mp4');
     }
 
 }
-
-
-
-
-
-
-//https://cdn.discordapp.com/attachments/734479749212012584/735568347843788901/b775c50cce9c8e87e6c414516c16afaf.mp4
