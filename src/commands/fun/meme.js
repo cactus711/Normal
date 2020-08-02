@@ -28,6 +28,7 @@ module.exports = class extends Command {
 
         // Array con muchos memes. poQ no uso una API?
                var memearray = [
+                   'https://cdn.discordapp.com/attachments/738377706609180753/739538375815594044/15860137485618.jpg'‚
                    'https://cdn.discordapp.com/attachments/707537070641381438/723572191735840868/20200301_115913.png',
                    'https://cdn.discordapp.com/attachments/707537070641381438/723572868935450804/92824345_286562502336987_3648895891311427584_n.png',
                    'https://cdn.discordapp.com/attachments/707537070641381438/723572916419297350/20200519_235603.png',
