@@ -58,7 +58,7 @@ module.exports = class extends Command {
                    'https://cdn.discordapp.com/attachments/707537070641381438/723988408564711524/5db5bd52408c5.png',
                    'https://cdn.discordapp.com/attachments/707537070641381438/724326811156217896/FB_IMG_15445676848858191.png',
                    'https://cdn.discordapp.com/attachments/707537070641381438/724637207071162408/image0.jpg'
-               ];
+               ];  'https://cdn.discordapp.com/attachments/734500586631725115/739456757377794048/450_1000.jpg'
 
                var memerandom = memearray[Math.floor(memearray.length * Math.random())];
         message.send(
